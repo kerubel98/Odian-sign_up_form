@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cover">
+        <div class="image-warper">
+            <!--<img src="./image/halie-west-25xggax4bSA-unsplash.jpg" alt="" class="bg-img">-->
+            <div class="logo_text">
+                <div class="logo">
+                    <img src="./image/odin-lined.png" alt="logo" class="logo">
+                </div>
+                <div>
+                    <h1 class="text-logo">ODIN</h1>
+                </div>
+            </div>
+        </div>
+        <div class="form_warper">
+            <div class="text_on_top">
+                <p>This is not a real online service! est consequuntur 
+                    voluptate numquam iusto laudantium architecto quos commodi dolorem placeat!
+                </p>
+            </div>
+                <form action="#">
+                    <div class="forms">
+                        <p>Lets Do It !</p>
+                        <div class="name input">
+                            <div class="lists">
+                                <label for="frist_name">Frist Name</label>
+                                <input type="text" placeholder="Kirubel" id="frist_name">
+                            </div>
+                            <div class="lists">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" id="last_name" placeholder="Tadesse">
+                            </div>
+                        </div>
+                        <div class="email-phon input">
+                            <div class="lists">
+                                <label for="email">EMAL</label>
+                                <input type="email" id="email" placeholder="name@company.com">
+                            </div>
+                            <div class="lists">
+                                <label for="phone">Phone</label>
+                                <input type="number" placeholder="100-100-100" id="phone">
+
+                            </div>
+                        </div>
+                        <div class="password input">
+                            <div class="lists">
+                                <label for="pasword">Enter Pasword</label>
+                                <input type="password" id="pasword" class="error" required>
+                            </div>
+                            <div class="lists">
+                                <label for="confirm">Confirm pasword</label>
+                                <input type="password" id="confirm" class="error" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-box">
+                        <button>Creat Account</button>
+                        <p>alerdy have account ?<em>Log In</em></p>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <script>
+       let pword = document.querySelector('.pasword').getAttribute('value');
+        let pword2 = document.querySelector('.pasword').getAttribute('value');
+        if (pword !== pword2) {
+            alert('plese enter maching pasword')
+        }
+    </script>
+</body>
+</html>
